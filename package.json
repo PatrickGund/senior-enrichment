@@ -1,5 +1,5 @@
 {
-  "name": "senior_enrichment",
+  "name": "senior_enrichment_patrick_gund2",
   "version": "0.0.1",
   "description": "A review time project",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "test": "mocha **/*.test.js *.test.js",
     "build": "webpack",
     "build-watch": "webpack -w",
-    "start": "nodemon server/start.js"
+    "start": "nodemon server/start.js",
+    "seed": "node db/models/seed.js"
   },
   "keywords": [
     "react",
@@ -15,9 +16,15 @@
     "skeleton"
   ],
   "dependencies": {
+    "axios": "^0.15.0",
     "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "bootstrap-social": "^5.0.0",
     "chalk": "^1.1.3",
     "express": "^4.14.0",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.2.1",
+    "morgan": "^1.9.0",
     "pg": "^6.1.0",
     "pg-native": "^1.10.0",
     "react": "^15.3.2",
@@ -35,7 +42,6 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "volleyball": "^1.4.1",
     "webpack": "^3.5.5"
   }
 }

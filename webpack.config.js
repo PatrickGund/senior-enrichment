@@ -3,7 +3,7 @@
 const { resolve } = require('path')
 
 module.exports = {
-  entry: './app/main.jsx',
+  entry: './app/app.js',
   output: {
     path: __dirname,
     filename: './public/bundle.js'
@@ -18,6 +18,7 @@ module.exports = {
       {
         test: /jsx?$/,
         include: resolve(__dirname, './app'),
+        exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015']
